@@ -9,3 +9,7 @@ document.getElementById('olho2').addEventListener('click', function () {
     document.getElementById('olho2').hidden = "true";
     document.getElementById('olho').removeAttribute('hidden');
 });
+
+document.getElementById('btnVoltar').addEventListener('click', function () {
+    window.location.href = "home.html"
+});
