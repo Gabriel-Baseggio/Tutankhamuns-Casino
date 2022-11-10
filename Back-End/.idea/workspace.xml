@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="249cf7f6-1c35-4bc7-8a5f-38920f692fff" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../cadastro.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/cadastro.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/home.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/rank.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/bgCadastro.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/bgLogin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/cacaNiquel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/cetro.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/coco.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/crocodilo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/crocoins.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/farao.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/farao2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/fundorank.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/gato.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/iconeLupa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/iconeOlho.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/iconeOlho2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/iconePerfil.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/iconeRanking.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/logoBranca.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/logoPreta.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/olho.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/piramide.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/risco.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/roletaCoins.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/voltarBranco.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/voltarPreto.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../js/cadastro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../js/login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rank.html" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2HNBLLeM71PDeHKSajyYkDDX36q" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="249cf7f6-1c35-4bc7-8a5f-38920f692fff" name="Default Changelist" comment="" />
+      <created>1668115603869</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1668115603869</updated>
+    </task>
+    <servers />
+  </component>
+</project>
