@@ -1,0 +1,80 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/bgCadastro.png');
+    background-repeat: no-repeat;
+    background-position-y: -100px;
+    background-size: 100%;
+    height: 97vh;
+    width: 98vw;
+}
+
+#divCadastro{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 30%;
+    background-color: white;
+    border: black 1px solid;
+    border-radius: 5px;
+}
+
+input {
+    height: 52px;
+    width: 70%;
+    margin: 10px 0;
+    padding: 0 10px;
+    background-color: rgba(253, 187, 89, 0.8);
+    border: #00682A 5px solid;
+    border-radius: 5px;
+    border-width: 0 0 0 5px;
+    font-size: 15px;
+    font-weight: 800;
+} 
+
+input[type=submit] {
+    height: 42px;
+    width: 40%;
+    margin: 10px 0;
+    padding: 0 5px;
+    background-color: #00682A;
+    color: white;
+    font-size: 15px;
+    font-weight: 800;
+} 
+
+input::placeholder{
+    color: black;
+}
+
+input:focus{
+    outline: none;    
+} 
+  
+#olho, #olho2 {
+    cursor: pointer;
+    left: 780px;
+    top: 425px;
+    position: absolute;
+    width: 40px;
+}
+
+#riscoTit{
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: black;
+    width: 60%;
+    height: 2px;
+}
+
+#tit{
+    margin: 0;
+    font-size: 40px;
+    font-weight: bolder;
+}

@@ -1,0 +1,135 @@
+header {
+    background-color: #530094;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+body {
+    background: linear-gradient(224.68deg, #FFFFFF, #FFD977, rgba(255, 217, 119, 0.25));
+    margin: 0;
+}
+
+.faraoHeader {
+    height: 70px;
+}
+
+.logoHeader {
+    height: 70px;
+}
+
+.rankingHeader {
+    height: 60px;
+}
+
+.riscoHeader {
+    height: 60px;
+}
+
+.perfilHeader {
+    height: 60px;
+}
+
+.divImgs img {
+    margin: 0 10px;
+}
+
+#logoPreta {
+    margin-left: 50px;
+}
+
+.botao {
+    color: white;
+    background-color: #530094;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    width: 50%;
+    border-radius: 3px;
+}
+
+#botao{
+    margin-left: 20px;
+    margin: auto;
+}
+
+#divSec1 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-top: 100px;
+    height: 500px;
+}
+
+#divSec2{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#pesquisarJogos{
+    font-size: 20px;
+    border: none;
+    height: 50px;
+    width: 600px;
+}
+
+#pesquisarJogos:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+#iconeLupa{
+    height: 50px;
+}
+
+#divPesquisa{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    background-color: white;
+    border: black 1px solid;
+    border-radius: 5px;
+}
+
+#paiPesquisa{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#jogosDoMomento{
+    display: flex;
+    flex-direction: column;
+}
+
+#titulo {
+    font-weight: 900;
+    font-size: 50px;
+    font-family: sans-serif;
+    margin:  60px 40px 40px 40px;
+}
+
+#subtitulo {
+    font-weight: 800;
+    font-size: 25px;
+    font-family: sans-serif;
+    margin-left: 40px;
+}
+
+#riscoTitulo{
+    background-color: black;
+    height: 2px;
+    width: 510px;
+    margin-left: 40px;
+}
+
+#imgCacaNiquel{
+    height: auto;
+    width: 500px;
+    margin: 0 40px 40px 40px;
+}
