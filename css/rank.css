@@ -1,0 +1,93 @@
+
+body{
+    background-image: url("../img/fundorank.png");
+    background-repeat: no-repeat;
+    background-position-y: -100px;
+    background-size: 100%;
+}
+
+#titulorank{
+text-align: center;
+font-size: 40px;
+}
+
+#divPesquisa{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    width: 30%;
+    background-color: white;
+    border: black 1px solid;
+    border-radius: 5px;
+}
+
+#paiPesquisa{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+#pesquisarJogos{
+    font-size: 20px;
+    border: none;
+    height: 50px;
+    width: 600px;
+}
+
+#pesquisarJogos:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+#iconeLupa{
+    height: 50px;
+}
+
+#pairank{
+    border-radius: 10px;
+    border-color: black;
+    height: 300px;
+    width: 500px;
+    background-color: white;
+    margin-left: 425px;
+    overflow-y: scroll;
+}
+
+#pairank>div{
+margin: 10px;
+}
+
+.filhorank{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    border-color: black;
+    height: 50px;
+    width: 450px;
+    background-color: white;
+    margin-left: 25px;
+    box-shadow: 0.1em 0.2em 0.1em rgba(0, 0, 0, 0.596);;
+    font-size: 20px;
+
+}
+
+.riscopreto{
+    height: 35px;
+    width: 1px;
+    background-color: rgb(0, 0, 0);
+    margin-left: 0;
+    display: inline-block
+
+}
+
+.divFilho{
+    display: inline;
+    width: 50px;
+    margin-right: 200px;
+    height: 100%;
+}
