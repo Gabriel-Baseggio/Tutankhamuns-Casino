@@ -1,10 +1,16 @@
 
 body{
+    
+    font-family: 'Eczar';
+    height: 97vh;
+    width: 98vw;
     background-image: url("../img/fundorank.png");
     background-repeat: no-repeat;
     background-position-y: -100px;
     background-size: 100%;
 }
+
+
 
 #titulorank{
 text-align: center;
@@ -61,8 +67,7 @@ margin: 10px;
 
 .filhorank{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
     border-radius: 10px;
@@ -87,7 +92,42 @@ margin: 10px;
 
 .divFilho{
     display: inline;
-    width: 50px;
-    margin-right: 200px;
     height: 100%;
+}
+
+#primeiro{
+    background-color: #FAC745;
+    width: 50px;
+    color: white;
+
+
+}
+
+#segundo{
+    background-color: #AFAFAF;
+    width: 50px;
+    color: white;
+
+}
+
+#terceiro{
+    background-color: #AF8005;
+    width: 50px;
+    color: white;
+
+}
+
+#colocacaoroxo{
+    background-color: #530094;
+    width: 50px;
+    color: white;
+}
+
+#btnVoltar{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 70px;
+    cursor: pointer;
+   
 }

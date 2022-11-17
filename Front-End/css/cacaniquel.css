@@ -1,0 +1,53 @@
+body{
+    background-image: url('../img/fundocacaniquel.png');
+    background-repeat: no-repeat;
+    background-position-y: -100px;
+    background-size: 100%;
+}
+
+#btnVoltar{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 70px;
+    cursor: pointer;
+   
+}
+
+
+
+#DivRoleta{
+position:relative;
+border: 2px white solid;
+border-radius: 20px;
+height: 400px;
+width: 800px;
+background-color:#00682A;
+margin-left: 40px;
+margin-top: 150px;
+
+}
+
+#DivMultiplicadores{
+position:relative;
+border: 2px white solid;
+border-radius: 20px;
+height: 400px;
+width: 300px;
+background-color:#00682A;
+margin-left: 900px;
+margin-top: 0px;
+}
+
+.paiDiv:before,
+.paiDiv:after {
+    content: "";
+    display: table;
+} 
+.paiDiv:after {
+    clear: both;
+}
+
+.paiDiv {
+    zoom: 1; 
+}
