@@ -2,10 +2,7 @@ package br.senai.sc.tutankhamunscasino.model.entities;
 
 import lombok.*;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "perfil")
@@ -18,6 +15,10 @@ import javax.persistence.Table;
 public class Perfil {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(nullable = false, unique = true)
+    private Long id;
+
     @Column(nullable = false, length = 11)
     private String cpf;
 

@@ -16,7 +16,7 @@ import java.util.List;
 
 @AllArgsConstructor
 @Controller
-@RequestMapping("/tuthankamuns/historico")
+@RequestMapping("/tutankhamun/historico")
 public class HistoricoController {
 
     private HistoricoService historicoService;
@@ -59,6 +59,7 @@ public class HistoricoController {
 
         Historico historico = new Historico();
         BeanUtils.copyProperties(historicoDTO, historico);
+        historico.setId(id);
 
         return ResponseEntity.status(HttpStatus.OK).body(historicoService.save(historico));
     }

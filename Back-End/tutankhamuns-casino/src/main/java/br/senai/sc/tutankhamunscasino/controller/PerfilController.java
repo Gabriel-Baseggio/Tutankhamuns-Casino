@@ -18,7 +18,7 @@ import java.util.List;
 
 @AllArgsConstructor
 @Controller
-@RequestMapping("/tuthankamuns/perfil")
+@RequestMapping("/tutankhamun/perfil")
 public class PerfilController {
 
     private PerfilService perfilService;
@@ -49,6 +49,7 @@ public class PerfilController {
 
         Perfil perfil = new Perfil();
         BeanUtils.copyProperties(perfilDTO, perfil);
+        perfil.setId(id);
 
         return ResponseEntity.status(HttpStatus.OK).body(perfilService.save(perfil));
     }

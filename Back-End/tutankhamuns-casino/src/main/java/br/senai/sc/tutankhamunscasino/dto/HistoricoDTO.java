@@ -8,7 +8,6 @@ import lombok.Setter;
 @Setter
 public class HistoricoDTO {
 
-    private Long id;
     private double valorAposta;
     private double valorResultado;
     private Perfil perfil;

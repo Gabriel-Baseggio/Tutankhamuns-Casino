@@ -15,6 +15,7 @@ import javax.persistence.*;
 public class Historico {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false, unique = true)
     private Long id;
 
@@ -27,7 +28,7 @@ public class Historico {
     // Foreign key
 
     @ManyToOne
-    @JoinColumn(name = "cpf_perfil")
+    @JoinColumn(name = "id_perfil")
     private Perfil perfil;
 
 }
