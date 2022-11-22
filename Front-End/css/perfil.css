@@ -12,7 +12,7 @@ body {
 }
 
 main {
-    height: 800px;
+    height: 563px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,8 +47,43 @@ main {
 }
 
 #historico {
+    padding: 20px;
     background-color: #530094;
-    width: 30%;
+    width: 28%;
     height: 400px;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.vitoria{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+    background-color: green;
+    width: 80%;
+    height: 15%;
+    border: 1px black solid;
+    border-radius: 5px;   
+}
+
+.derrota{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+    background-color: red;
+    width: 80%;
+    height: 15%;
+    border: 1px black solid;
+    border-radius: 5px;   
 }
