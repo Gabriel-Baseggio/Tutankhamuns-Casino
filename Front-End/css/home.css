@@ -72,39 +72,6 @@ body {
     flex-direction: column;
 }
 
-#pesquisarJogos{
-    font-size: 20px;
-    border: none;
-    height: 50px;
-    width: 600px;
-}
-
-#pesquisarJogos:focus{
-    box-shadow: 0 0 0 0;
-    outline: 0;
-}
-
-#iconeLupa{
-    height: 50px;
-}
-
-#divPesquisa{
-    padding: 0;
-    display: flex;
-    align-items: center;
-    width: 50%;
-    background-color: white;
-    border: black 1px solid;
-    border-radius: 5px;
-}
-
-#paiPesquisa{
-    margin-top: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 #jogosDoMomento{
     display: flex;
     flex-direction: column;

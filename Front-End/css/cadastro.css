@@ -27,7 +27,7 @@ body{
     border-radius: 10px;
 }
 
-input {
+#inputCpf, #inputNome, #inputEmail {
     height: 52px;
     width: 70%;
     margin: 5px 0;
@@ -36,6 +36,15 @@ input {
     border: #00682A 5px solid;
     border-radius: 5px;
     border-width: 0 0 0 5px;
+    font-size: 20px;
+    font-weight: 800;
+} 
+
+#inputSenha {
+    height: 52px;
+    width: 80%;
+    background-color: transparent;
+    border: none;
     font-size: 20px;
     font-weight: 800;
 } 
@@ -62,18 +71,13 @@ input:focus{
 
 #olho {
     cursor: pointer;
-    left: 780px;
-    top: 416px;
-    position: absolute;
-    width: 40px;
+    width: 30px;
+    margin-right: 7px;
 }
 
 #olho2 {
     cursor: pointer;
-    left: 774px;
-    top: 418px;
-    position: absolute;
-    width: 55px;
+    width: 40px;
 }
 
 #riscoTit{
@@ -106,4 +110,21 @@ input:focus{
     left: 20px;
     width: 70px;
     cursor: pointer;
+}
+
+#divSenha{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 52px;
+    width: 70%;
+    margin: 5px 0;
+    padding: 0 10px;
+    background-color: rgba(253, 187, 89, 0.8);
+    border: #00682A 5px solid;
+    border-radius: 5px;
+    border-width: 0 0 0 5px;
+    font-size: 20px;
+    font-weight: 800;
 }
