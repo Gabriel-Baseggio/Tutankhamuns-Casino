@@ -1,8 +1,20 @@
 package br.senai.sc.tutankhamunscasino.model.entities;
 
-import javax.persistence.Column;
-import javax.persistence.Id;
+import lombok.*;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "perfil")
+@AllArgsConstructor
+@NoArgsConstructor()
+@Getter
+@Setter
+@ToString
+@EqualsAndHashCode
 public class Perfil {
 
     @Id
@@ -18,19 +30,16 @@ public class Perfil {
     @Column(nullable = false, length = 50)
     private String senha;
 
-    @Column()
+    @Column
     private Integer jogos;
 
     @Column(nullable = false)
     private Integer nivel;
 
-    @Column()
+    @Column
     private Integer vitorias;
 
-    @Column()
+    @Column
     private double saldo;
-
-    // Foreign Key
-    private Historico historico;
 
 }
