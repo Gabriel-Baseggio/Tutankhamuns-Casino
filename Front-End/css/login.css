@@ -27,16 +27,25 @@ body {
     border-radius: 10px;
 }
 
-input {
+#inputEmail {
     height: 52px;
     width: 70%;
-    margin: 10px 0;
+    margin: 5px 0;
     padding: 0 10px;
     background-color: rgba(253, 187, 89, 0.8);
     border: #00682A 5px solid;
     border-radius: 5px;
     border-width: 0 0 0 5px;
-    font-size: 15px;
+    font-size: 20px;
+    font-weight: 800;
+} 
+
+#inputSenha {
+    height: 52px;
+    width: 80%;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
     font-weight: 800;
 } 
 
@@ -60,21 +69,15 @@ input:focus{
     outline: none;    
 } 
 
-#olho, #olho2 {
-    cursor: pointer;
-    position: absolute;
-}
-
 #olho {
-    left: 780px;
-    top: 325px;
-    width: 40px;
+    cursor: pointer;
+    width: 30px;
+    margin-right: 7px;
 }
 
 #olho2 {
-    left: 775px;
-    top: 327px;
-    width: 53px;
+    cursor: pointer;
+    width: 40px;
 }
 
 #riscoTit {
@@ -105,7 +108,7 @@ input:focus{
 }
 
 #divManter {
-    margin-top: -20px;
+    margin-top: 10px;
     width: 75%;
     display: flex;
     flex-direction: row;
@@ -122,4 +125,29 @@ input:focus{
 
 #divLogin a:hover {
     color: #351FFF;
+}
+
+#btnVoltar{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 70px;
+    cursor: pointer;
+}
+
+#divSenha{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 52px;
+    width: 70%;
+    margin: 5px 0;
+    padding: 0 10px;
+    background-color: rgba(253, 187, 89, 0.8);
+    border: #00682A 5px solid;
+    border-radius: 5px;
+    border-width: 0 0 0 5px;
+    font-size: 20px;
+    font-weight: 800;
 }
