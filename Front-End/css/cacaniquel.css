@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@400;500;600;700;800&display=swap');
+
 body{
+    font-family: 'Eczar';
     background-image: url('../img/fundocacaniquel.png');
     background-repeat: no-repeat;
     background-position-y: -100px;
     background-size: 100%;
+    overflow: hidden;
 }
 
 #btnVoltar{
@@ -17,37 +21,31 @@ body{
 
 
 #DivRoleta{
-position:relative;
 border: 2px white solid;
 border-radius: 20px;
 height: 400px;
 width: 800px;
 background-color:#00682A;
-margin-left: 40px;
-margin-top: 150px;
-
 }
 
 #DivMultiplicadores{
-position:relative;
 border: 2px white solid;
 border-radius: 20px;
 height: 400px;
 width: 300px;
 background-color:#00682A;
-margin-left: 900px;
-margin-top: 0px;
 }
 
-.paiDiv:before,
-.paiDiv:after {
-    content: "";
-    display: table;
-} 
-.paiDiv:after {
-    clear: both;
+#jogo{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-.paiDiv {
-    zoom: 1; 
+#interface{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
