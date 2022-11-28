@@ -14,27 +14,21 @@ document.getElementById('btnVoltar').addEventListener('click', function () {
     window.location.href = "/"
 });
 
-
-// teste
-
-const botao = document.getElementById("botaoTeste")
-
-function dados(data) {
-    console.log("Dados aq: ", data)
-}
-
-botao.addEventListener("click", () => {
-    fetch("http://localhost:8080/tutankhamun/perfil", {
-        method: "GET",
-        mode: 'no-cors',
-        cache: "default"
-    })
-        .then(res => {
-            res.json().then(data => {
-                    dados(data)
-                })
+window.addEventListener("load", async () => {
+    try {
+        const f = await fetch("http://localhost:8080/tutankhamun/perfil", {
+            method:'GET',
+            mode: 'no-cors',
+            cache: 'default'
         })
+        console.log('fetch: ', f)
+
+    } catch (error) {
+        console.error(error)
+    }
 })
+
+
 
 
 

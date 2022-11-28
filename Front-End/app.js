@@ -1,5 +1,4 @@
 const express = require('express');
-const mysql = require('mysql2');
 const bodyParser = require('body-parser');
 
 const app = express();
@@ -7,15 +6,6 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(express.static(__dirname + '/'))
 app.use(express.json())
-
-const sql = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'root',
-    port: 3306
-})
-
-sql.query("use tutankhamun");
 
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/components/home.html');
@@ -41,6 +31,6 @@ app.get('/cacaniquel', (req, res) => {
     res.sendFile(__dirname + '/components/cacaniquel.html');
 });
 
-app.listen('8080', (req, res) => {
-    console.log("servidor rodando 8080")
+app.listen('8081', (req, res) => {
+    console.log("servidor rodando 8081")
 });
