@@ -17,7 +17,12 @@ main {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
+}
+
+main > div{
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .faraoHeader {
@@ -71,6 +76,7 @@ main {
     height: 15%;
     border: 1px black solid;
     border-radius: 5px;   
+    box-shadow: 5px 5px 1px rgb(43, 49, 49);
 }
 
 .derrota{
@@ -86,4 +92,112 @@ main {
     height: 15%;
     border: 1px black solid;
     border-radius: 5px;   
+    box-shadow: 5px 5px 1px rgb(43, 49, 49);
+}
+
+#divPerfil{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 160px;
+    width: 400px;
+}
+
+#nomePerfil{
+    font-size: 50px;
+    font-weight: 900;
+}
+
+#nivelPerfil{
+    font-size: 40px;
+    font-weight: 900;
+}
+
+#coinsPerfil{
+    font-size: 40px;    
+    font-weight: 900;
+}
+
+#fotoPerfil{
+    border: 1px black solid;
+    border-radius: 360px;
+    width: 120px;
+}
+
+#divImgPerfil{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#iconeLapis{
+    width: 30px;
+    margin-left: -30px;
+}
+
+#divPerfilJogos{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    height: 260px;
+    width: 400px;
+    background-color: #530094;
+    color: white;
+}
+
+#divPerfilJogos > h1{
+    margin: 10px;
+}
+
+#jogos{
+    background-color: white;
+    color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 30px;
+    font-weight: 900;
+    border-radius: 20px;
+    height: 10%;
+    width: 80%;
+    margin: 5px;
+    padding: 10px;
+    box-shadow: 5px 5px 1px rgb(43, 49, 49);
+}
+
+#vitorias{
+    background-color: white;
+    color: green;
+    display: flex;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 30px;
+    font-weight: 900;
+    height: 10%;
+    width: 80%;
+    margin: 5px;
+    padding: 10px;   
+    box-shadow: 5px 5px 1px rgb(43, 49, 49);
+}
+
+#derrotas{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    font-size: 30px;
+    font-weight: 900;
+    color: red;
+    border-radius: 20px;
+    height: 10%;
+    width: 80%;
+    margin: 5px;
+    padding: 10px;
+    box-shadow: 5px 5px 1px rgb(43, 49, 49);
 }
