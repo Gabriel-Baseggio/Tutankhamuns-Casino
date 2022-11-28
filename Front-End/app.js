@@ -7,15 +7,6 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(express.static(__dirname + '/'))
 app.use(express.json())
 
-const sql = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'root',
-    port: 3306
-})
-
-// sql.query("use tutankhamun");
-
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/components/home.html');
 });

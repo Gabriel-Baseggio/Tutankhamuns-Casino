@@ -14,19 +14,6 @@ document.getElementById('btnVoltar').addEventListener('click', function () {
     window.location.href = "/"
 });
 
-window.addEventListener("load", async () => {
-    try {
-        const f = await fetch("http://localhost:8080/tutankhamun/perfil", {
-            method:'GET',
-            mode: 'no-cors',
-            cache: 'default'
-        })
-        console.log('fetch: ', f)
-
-    } catch (error) {
-        console.error(error)
-    }
-})
 
 
 

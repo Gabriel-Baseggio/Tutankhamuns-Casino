@@ -14,6 +14,7 @@ public class PerfilDTO {
     private Integer jogos;
     private Integer nivel;
     private Integer vitorias;
+    private Integer derrotas;
     private double saldo;
 
 }

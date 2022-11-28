@@ -41,6 +41,9 @@ public class Perfil {
     private Integer vitorias;
 
     @Column
+    private Integer derrotas;
+
+    @Column
     private double saldo;
 
 }

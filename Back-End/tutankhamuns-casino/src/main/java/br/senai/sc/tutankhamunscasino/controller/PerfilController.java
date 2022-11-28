@@ -18,6 +18,7 @@ import java.util.List;
 
 @AllArgsConstructor
 @Controller
+@CrossOrigin(origins = "http://localhost:8081")
 @RequestMapping("/tutankhamun/perfil")
 public class PerfilController {
 

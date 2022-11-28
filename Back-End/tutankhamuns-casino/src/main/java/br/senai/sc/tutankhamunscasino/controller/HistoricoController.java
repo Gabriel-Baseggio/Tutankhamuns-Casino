@@ -16,6 +16,7 @@ import java.util.List;
 
 @AllArgsConstructor
 @Controller
+@CrossOrigin(origins = "http://localhost:8081")
 @RequestMapping("/tutankhamun/historico")
 public class HistoricoController {
 
