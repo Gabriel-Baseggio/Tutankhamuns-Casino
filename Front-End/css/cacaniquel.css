@@ -1,51 +1,238 @@
 @import url('https://fonts.googleapis.com/css2?family=Eczar:wght@400;500;600;700;800&display=swap');
 
-body{
-    font-family: 'Eczar';
+body {
+    font-family: "Eczar";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-image: url('../img/fundocacaniquel.png');
     background-repeat: no-repeat;
     background-position-y: -100px;
     background-size: 100%;
-    overflow: hidden;
+    height: 97vh;
+    width: 98vw;
 }
 
-#btnVoltar{
+#btnVoltar {
     position: absolute;
     top: 20px;
     left: 20px;
     width: 70px;
     cursor: pointer;
-   
 }
 
-
-
-#DivRoleta{
-border: 2px white solid;
-border-radius: 20px;
-height: 400px;
-width: 800px;
-background-color:#00682A;
+#DivRoleta {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    border: 2px white solid;
+    border-radius: 20px;
+    height: 400px;
+    width: 800px;
+    background-color: #00682A;
 }
 
-#DivMultiplicadores{
-border: 2px white solid;
-border-radius: 20px;
-height: 400px;
-width: 300px;
-background-color:#00682A;
+#aposta {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    height: 60px;
+    width: 400px;
 }
 
-#jogo{
-    margin-top: 100px;
+#DivMultiplicadores {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px white solid;
+    border-radius: 20px;
+    height: 400px;
+    width: 280px;
+    background-color: #00682A;
+}
+
+#btnJogar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font: 900 30px;
+    border: 2px white solid;
+    border-radius: 20px;
+    height: 75px;
+    width: 300px;
+    background-color: #00682A;
+}
+
+#jogo {
+    margin-top: 50px;
+    width: 90%;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#interface {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-#interface{
-    margin-top: 100px;
+.fundoJogo {
+    width: 190px;
+    height: 200px;
+}
+
+#DivMultiplicadores>h1 {
+    margin: 0;
+}
+
+.mult {
+    margin: 2px;
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mult img {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 40px;
+}
+
+.multTxt {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+#btnMais {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    color: white;
+    border: 3px white solid;
+    border-radius: 360px;
+    background-color: #00682A;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+#btnMenos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    color: white;
+    border: 3px white solid;
+    border-radius: 360px;
+    background-color: red;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+#divBtnPai {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#divPai {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     flex-direction: row;
-    justify-content: space-around;
+    background-color: black;
+    width: 370px;
+    height: 60px;
+    border: 3px solid white;
+    border-radius: 20px;
+    color: white;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+#divPaiMD {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#metade {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    border: 3px solid white;
+    border-right-width: 1.5px;
+    background-color: #00682A;
+    width: 50px;
+    height: 60px;
+}
+
+#dobro {
+    cursor: pointer;
+    border: 3px solid white;
+    border-width: 0;
+    border-left-width: 1.5px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    background-color: #00682A;
+    width: 50px;
+    height: 60px;
+
+}
+
+#divPai input{
+    background-color: black;
+    width: 270px;
+    height: 58px;
+    border: 3px solid white;
+    border-width: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    color: white;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+#divPai > input:focus{
+    border: none;
+    outline: none;
+}
+
+#divPai > input::placeholder{
+    padding: 40px;
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+}
+
+#divPai > input:{
+    padding: 40px;
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
