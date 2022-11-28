@@ -7,8 +7,6 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(express.static(__dirname + '/'))
 app.use(express.json())
 
-<<<<<<< Updated upstream
-=======
 const sql = mysql.createConnection({
     host: 'localhost',
     user: 'root',
@@ -18,7 +16,6 @@ const sql = mysql.createConnection({
 
 // sql.query("use tutankhamun");
 
->>>>>>> Stashed changes
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/components/home.html');
 });

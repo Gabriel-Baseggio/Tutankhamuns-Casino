@@ -25,7 +25,8 @@ body {
 #DivRoleta {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     flex-direction: row;
     border: 2px white solid;
     border-radius: 20px;
@@ -67,6 +68,7 @@ body {
     height: 75px;
     width: 300px;
     background-color: #00682A;
+    cursor: pointer;
 }
 
 #jogo {
@@ -86,12 +88,7 @@ body {
     justify-content: space-around;
 }
 
-.fundoJogo {
-    width: 190px;
-    height: 200px;
-}
-
-#DivMultiplicadores>h1 {
+#DivMultiplicadores > h1 {
     margin: 0;
 }
 
@@ -102,7 +99,7 @@ body {
     justify-content: center;
 }
 
-.mult img {
+.mult > img{
     margin-left: 10px;
     margin-right: 10px;
     width: 40px;
@@ -125,6 +122,7 @@ body {
     background-color: #00682A;
     font-size: 20px;
     font-weight: 900;
+    cursor: pointer;
 }
 
 #btnMenos {
@@ -139,6 +137,7 @@ body {
     background-color: red;
     font-size: 20px;
     font-weight: 900;
+    cursor: pointer;
 }
 
 #divBtnPai {
@@ -210,6 +209,7 @@ body {
     color: white;
     font-size: 15px;
     font-weight: 900;
+    padding-left: 40px;
 }
 
 #divPai > input:focus{
@@ -218,15 +218,7 @@ body {
 }
 
 #divPai > input::placeholder{
-    padding: 40px;
-    font-size: 20px;
-    font-weight: 900;
-    color: white;
-}
-
-#divPai > input:{
-    padding: 40px;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 900;
     color: white;
 }
@@ -235,4 +227,35 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
+}
+
+#img1, #img2, #img3, #img4 {
+    position: fixed;
+    height: 100px;
+    z-index: 1;
+}
+
+.fundoJogo {
+    width: 190px;
+    height: 200px;
+    opacity: 0.75;
+    z-index: 0;
+}
+
+#DivRoleta > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -80px;
+}
+
+#result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    margin: 0;
+    color: white;
+    font-size: 30px;
+    font-weight: 900;
 }
