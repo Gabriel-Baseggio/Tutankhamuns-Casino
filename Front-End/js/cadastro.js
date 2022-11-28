@@ -11,9 +11,8 @@ document.getElementById('olho2').addEventListener('click', function () {
 });
 
 document.getElementById('btnVoltar').addEventListener('click', function () {
-    window.location.href = "home.html"
+    window.location.href = "/"
 });
-
 
 
 // teste

@@ -1,11 +1,11 @@
 function ranking(){
-    window.location.href = `ranking.html`
+    window.location.href = `/ranking`;
 }
 
 function perfil(){
-    window.location.href = `perfil.html`
+    window.location.href = `/perfil`;
 }
 
 function cacaNiquel(){
-    window.location.href = `cacaniquel.html`
+    window.location.href = `/cacaniquel`;
 }
