@@ -37,6 +37,7 @@ btn.addEventListener("click", function () {
         .then(res => {
         })
 
+    alert("Cadastro feito com sucesso!")
     window.location.href = "/"
 });
 
