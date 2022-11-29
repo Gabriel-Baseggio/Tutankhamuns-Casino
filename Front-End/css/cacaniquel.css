@@ -1,17 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Eczar:wght@400;500;600;700;800&display=swap');
 
-body {
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+}
+
+#divBody {
+    margin: 0;
     font-family: "Eczar";
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-image: url('../img/fundocacaniquel.png');
-    background-repeat: no-repeat;
-    background-position-y: -100px;
     background-size: 100%;
-    height: 97vh;
-    width: 98vw;
+    height: 100vh;
+    width: 100vw;
 }
 
 #btnVoltar {
