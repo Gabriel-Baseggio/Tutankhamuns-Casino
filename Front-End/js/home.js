@@ -11,21 +11,13 @@ function ranking() {
 }
 
 function perfil() {
-    if (localStorage.length > 0) {
-        window.location.href = `/perfil`;
-    } else {
-        window.location.href = `/cadastro`;
-    }
-}
-
-function login() {
-    window.location.href = `/login`;
+    window.location.href = `/perfil`;
 }
 
 function cacaNiquel() {
     window.location.href = `/cacaniquel`;
 }
 
-function deslogar(){
+function deslogar() {
     window.location.href = `/`;
 }

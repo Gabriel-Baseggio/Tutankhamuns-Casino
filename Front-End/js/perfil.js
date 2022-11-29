@@ -14,10 +14,6 @@ function dados(result){
     derrotas.innerText = result.derrotas;
 }
 
-function deslogar(){
-    window.location.href = '/';
-}
-
 document.getElementById('btnVoltar').addEventListener('click', function () {
     window.location.href = "/home"
 });
@@ -39,23 +35,11 @@ window.addEventListener("load", () => {
 });
 
 function home() {
-    window.location.href = `/`;
+    window.location.href = `/home`;
 }
 
 function ranking() {
     window.location.href = `/ranking`;
-}
-
-function perfil() {
-    if (localStorage.length > 0) {
-        window.location.href = `/perfil`;
-    } else {
-        window.location.href = `/cadastro`;
-    }
-}
-
-function login() {
-    window.location.href = `/login`;
 }
 
 function cacaNiquel() {

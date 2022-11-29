@@ -7,6 +7,8 @@ header {
 }
 
 body {
+    width: 100vw;
+    height: 100vh;
     background: linear-gradient(224.68deg, #FFFFFF, #FFD977, rgba(255, 217, 119, 0.25));
     margin: 0;
 }
@@ -87,14 +89,13 @@ main > div{
 #historico {
     padding: 20px;
     background-color: #530094;
-    width: 28%;
-    height: 400px;
+    width: 30%;
+    height: 35rem;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-    margin-top: 8%;
 }
 
 .vitoria{
@@ -129,18 +130,22 @@ main > div{
     box-shadow: 5px 5px 1px rgb(43, 49, 49);
 }
 
+#containerPerfil {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+}
+
 #divPerfil{
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 160px;
-    width: 400px;
-}
-
-#perfil {
-    margin-top: 8%;
+    height: 11rem;
+    width: 100%;
 }
 
 #nomePerfil{
@@ -176,14 +181,14 @@ main > div{
 }
 
 #divPerfilJogos{
-    margin-top: 20px;
+    margin-top: 10%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     border-radius: 10px;
-    height: 260px;
-    width: 400px;
+    height: 17rem;
+    width: 28rem;
     background-color: #530094;
     color: white;
 }
