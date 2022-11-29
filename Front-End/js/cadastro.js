@@ -36,6 +36,8 @@ btn.addEventListener("click", function () {
     )
         .then(res => {
         })
+
+        window.location.href = "/login"
 });
 
 

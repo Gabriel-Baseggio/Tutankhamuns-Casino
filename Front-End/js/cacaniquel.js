@@ -1,11 +1,25 @@
-let saldo = 0
+var dadosFetch, cpf, email, senha, nome, saldo, jogos, vitorias, derrotas, nivel
 
 document.getElementById('btnVoltar').addEventListener('click', function () {
     window.location.href = "/"
 });
 
 document.getElementById("btnJogar").addEventListener('click', () => {
+    cpf = dadosFetch.cpf
+    email = dadosFetch.email
+    senha = dadosFetch.senha
+    nome = dadosFetch.nome
+    saldo = dadosFetch.saldo
+    jogos = dadosFetch.jogos
+    vitorias = dadosFetch.vitorias
+    derrotas = dadosFetch.derrotas
+    nivel = dadosFetch.nivel
     randomizar()
+    atualizarDados()
+})
+
+window.addEventListener('load', () => {
+    pegarDados()
 })
 
 document.getElementById("metade").addEventListener('click', () => {
@@ -45,10 +59,11 @@ function menosUm() {
 }
 
 function jogar(imgs, cont) {
+    jogos++
     let valor = document.getElementById('inputAposta').value
-    if(valor <= 0){
+    if (valor <= 0) {
         alert('Você deve apostar um valor maior que 0')
-        return 
+        return
     }
     let c = 0
     let result = document.getElementById('result')
@@ -74,40 +89,52 @@ function jogar(imgs, cont) {
                     mult = 2 * (simb - 2)
                     result.innerText = `Parabéns você ganhou ${valor * mult} crocoins!`
                     saldo += valor * mult
+                    vitorias++
+                    nivel++
                     break
                 case 1:
                     mult = 4 * (simb - 2)
                     result.innerText = `Parabéns você ganhou ${valor * mult} crocoins!`
                     saldo += valor * mult
+                    vitorias++
+                    nivel++
                     break
                 case 2:
                     mult = 8 * (simb - 2)
                     result.innerText = `Parabéns você ganhou ${valor * mult} crocoins!`
                     saldo += valor * mult
+                    vitorias++
+                    nivel++
                     break
                 case 3:
                     mult = 16 * (simb - 2)
                     result.innerText = `Parabéns você ganhou ${valor * mult} crocoins!`
                     saldo += valor * mult
+                    vitorias++
+                    nivel++
                     break
                 case 4:
                     mult = 32 * (simb - 2)
                     result.innerText = `Parabéns você ganhou ${valor * mult} crocoins!`
                     saldo += valor * mult
+                    vitorias++
+                    nivel++
                     break
                 case 5:
                     mult = 64 * (simb - 2)
                     result.innerText = `Parabéns você ganhou ${valor * mult} crocoins!`
                     saldo += valor * mult
+                    vitorias++
+                    nivel++
                     break
             }
         } else if (i == 5 && c < 1) {
             result.innerText = `Que pena você não ganhou nada!`
             saldo -= valor
+            derrotas++
         }
         i++
     });
-    console.log(saldo)
 }
 
 function randomizar() {
@@ -148,3 +175,27 @@ function randomizar() {
     jogar(imgs, c)
 }
 
+function pegarDados() {
+    let id = localStorage.getItem('id')
+    fetch(`http://localhost:8080/tutankhamun/perfil/${id}`, {
+        method: "GET",
+        mode: 'cors',
+        cache: "default"
+    })
+        .then(res => {
+            res.json()
+                .then(data => {
+                    dadosFetch = data
+                })
+        })
+}
+
+function atualizarDados() {
+    fetch("http://localhost:8080/tutankhamun/perfil", {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(dadosFetch)
+    })
+        .then(res => {
+        })
+}
