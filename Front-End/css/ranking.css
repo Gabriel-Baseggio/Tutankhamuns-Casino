@@ -1,6 +1,4 @@
-
-body{
-    
+body {
     font-family: 'Eczar';
     height: 97vh;
     width: 98vw;
@@ -8,126 +6,145 @@ body{
     background-repeat: no-repeat;
     background-position-y: -100px;
     background-size: 100%;
-}
-
-
-
-#titulorank{
-text-align: center;
-font-size: 40px;
-}
-
-#divPesquisa{
-    padding: 0;
     display: flex;
     align-items: center;
-    width: 30%;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+#titulorank {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+    margin: 0;
+}
+
+#titulorank>p {
+    margin: 0;
+}
+
+#divPesquisa {
+    display: flex;
+    padding: 1px;
+    width: 100%;
+    height: 100%;
     background-color: white;
     border: black 1px solid;
     border-radius: 5px;
 }
 
-#paiPesquisa{
-    margin-top: 60px;
+#paiPesquisa {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px;
+    flex-direction: row;
+    width: 30%;
+    height: 50px;
 }
 
-#pesquisarJogos{
+#pesquisarJogos {
     font-size: 20px;
     border: none;
-    height: 50px;
     width: 600px;
 }
 
-#pesquisarJogos:focus{
+#pesquisarJogos:focus {
     box-shadow: 0 0 0 0;
     outline: 0;
 }
 
-#iconeLupa{
+#pesquisarJogos::placeholder {
+    font-weight: 900;
+    color: black;
+}
+
+#iconeLupa {
     height: 50px;
 }
 
-#pairank{
-    border-radius: 10px;
+#pairank {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
     border-color: black;
-    height: 300px;
+    height: 450px;
     width: 500px;
     background-color: white;
-    margin-left: 425px;
+}
+
+#scrollable{
+    width: 95%;
     overflow-y: scroll;
 }
 
-#pairank>div{
-margin: 10px;
-}
-
-.filhorank{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+table {
+    overflow-y: scroll;
+    margin: 10px 0px;
+    width: 99%;
     text-align: center;
-    border-radius: 10px;
-    border-color: black;
-    height: 50px;
-    width: 450px;
-    background-color: white;
-    margin-left: 25px;
-    box-shadow: 0.1em 0.2em 0.1em rgba(0, 0, 0, 0.596);;
+    border: 1px black solid;
+    border-collapse: collapse;
+}
+
+td, th{
+    font-family: 'Eczar';
     font-size: 20px;
-
+    padding: 6px;
+    border: 1px black solid;
 }
 
-.riscopreto{
-    height: 35px;
-    width: 1px;
-    background-color: rgb(0, 0, 0);
-    margin-left: 0;
-    display: inline-block
-
-}
-
-.divFilho{
-    display: inline;
-    height: 100%;
+.tdSal{
+    width: 20%;
 }
 
 #primeiro{
-    background-color: #FAC745;
-    width: 50px;
+    width: 20%;
     color: white;
-
-
+    background-color: #FAC745;
 }
 
 #segundo{
-    background-color: #AFAFAF;
-    width: 50px;
+    width: 20%;
     color: white;
-
+    background-color: #AFAFAF;
 }
 
 #terceiro{
+    width: 20%;
+    color: white;
     background-color: #AF8005;
-    width: 50px;
-    color: white;
-
 }
 
-#colocacaoroxo{
+.foraPodio{
+    width: 20%;
     background-color: #530094;
-    width: 50px;
     color: white;
 }
 
-#btnVoltar{
+#btnVoltar {
     position: absolute;
     top: 20px;
     left: 20px;
     width: 70px;
     cursor: pointer;
-   
+}
+
+#scrollable {
+    scrollbar-color: #000000 #ffffff;
+}
+
+#scrollable::-webkit-scrollbar {
+    width: 10px;
+}
+
+#scrollable::-webkit-scrollbar-track {
+    background: #ffffff;
+    border-radius: 20px;
+}
+
+#scrollable::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border-radius: 20px;
+    border: 2px solid #00ffb3;
 }

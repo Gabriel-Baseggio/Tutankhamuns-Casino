@@ -10,11 +10,11 @@
 </head>
 
 <body>
+    <img src="img/voltarBranco.png" alt="Botão Voltar" id="btnVoltar">
     <div id="titulorank">
         <p>Ranking Global</p>
     </div>
 
-    <img src="img/voltarBranco.png" alt="Botão Voltar" id="btnVoltar">
     <div id="paiPesquisa">
         <div id="divPesquisa">
             <img src="img/iconeLupa.png" id="iconeLupa" alt="Ícone de Lupa">
@@ -23,14 +23,18 @@
     </div>
 
     <div id="pairank">
-        <table>
-            <tr>
-                <th>Colocação</th>
-                <th>Nome</th>
-                <th>Saldo</th>
-            </tr>
-            <tbody id="tbody"></tbody>
-        </table>
+        <div id="scrollable">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Colocação</th>
+                        <th>Nome</th>
+                        <th>Saldo</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+            </table>
+        </div>
     </div>
 
 

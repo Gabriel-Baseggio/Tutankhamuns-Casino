@@ -2,15 +2,27 @@ const url = new URLSearchParams(window.location.search)
 
 const user = url.get("user")
 
-function ranking(){
+function home() {
+    window.location.href = `/`;
+}
+
+function ranking() {
     window.location.href = `/ranking`;
 }
 
-function perfil(){
-    window.location.href = `/perfil`;
+function perfil() {
+    if (localStorage.length > 0) {
+        window.location.href = `/perfil`;
+    } else {
+        window.location.href = `/cadastro`;
+    }
 }
 
-function cacaNiquel(){
+function login() {
+    window.location.href = `/login`;
+}
+
+function cacaNiquel() {
     window.location.href = `/cacaniquel`;
 }
 

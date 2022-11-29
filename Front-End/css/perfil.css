@@ -34,10 +34,12 @@ main > div{
 }
 
 .faraoHeader {
+    cursor: pointer;
     height: 70px;
 }
 
 .logoHeader {
+    cursor: pointer;
     height: 70px;
 }
 
@@ -62,6 +64,24 @@ main > div{
 
 .divImgs img {
     margin: 0 10px;
+}
+
+.divImgs > button{
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #FFD977;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    color: #530094;
+    outline: none;
+}
+
+.divImgs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
 }
 
 #historico {

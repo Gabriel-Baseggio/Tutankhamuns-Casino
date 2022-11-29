@@ -12,10 +12,12 @@ body {
 }
 
 .faraoHeader {
+    cursor: pointer;
     height: 70px;
 }
 
 .logoHeader {
+    cursor: pointer;
     height: 70px;
 }
 
@@ -40,6 +42,24 @@ body {
 
 .divImgs img {
     margin: 0 10px;
+}
+
+.divImgs > button{
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #FFD977;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    color: #530094;
+    outline: none;
+}
+
+.divImgs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
 }
 
 #logoPreta {
@@ -104,6 +124,7 @@ body {
 }
 
 #imgCacaNiquel{
+    cursor: pointer;
     height: auto;
     width: 500px;
     margin: 0 40px 40px 40px;
