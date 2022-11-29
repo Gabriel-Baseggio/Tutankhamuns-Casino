@@ -22,24 +22,24 @@ document.getElementById("btnMenos").addEventListener('click', () => {
     menosUm()
 })
 
-function metade(){
+function metade() {
     let valor = document.getElementById('inputAposta')
-    valor.value = parseFloat(valor.value)*0.5
+    valor.value = parseFloat(valor.value) * 0.5
 }
 
-function dobrar(){
+function dobrar() {
     let valor = document.getElementById('inputAposta')
-    valor.value = parseFloat(valor.value)*2
+    valor.value = parseFloat(valor.value) * 2
 }
 
-function maisUm(){
+function maisUm() {
     let valor = document.getElementById('inputAposta')
-    valor.value = parseFloat(valor.value)+1
+    valor.value = parseFloat(valor.value) + 1
 }
 
-function menosUm(){
+function menosUm() {
     let valor = document.getElementById('inputAposta')
-    valor.value = parseFloat(valor.value)-1
+    valor.value = parseFloat(valor.value) - 1
 }
 
 function jogar(imgs, cont) {
@@ -61,33 +61,33 @@ function jogar(imgs, cont) {
 
     cont.forEach(simb => {
         console.log("simbolo ", i, simb)
-        if(simb >= 3){
+        if (simb >= 3) {
             console.log("i no if: ", i)
-            switch(i){
+            switch (i) {
                 case 0:
-                    mult = 2*(simb-2)
-                    result.innerText = `Parabéns você ganhou ${valor*mult} crocoins!`
+                    mult = 2 * (simb - 2)
+                    result.innerText = `Parabéns você ganhou ${valor * mult} crocoins!`
                     break
                 case 1:
-                    mult = 4*(simb-2)
-                    result.innerText =  `Parabéns você ganhou ${valor*mult} crocoins!`
-                    break  
+                    mult = 4 * (simb - 2)
+                    result.innerText = `Parabéns você ganhou ${valor * mult} crocoins!`
+                    break
                 case 2:
-                    mult = 8*(simb-2)
-                    result.innerText = `Parabéns você ganhou ${valor*mult} crocoins!`
+                    mult = 8 * (simb - 2)
+                    result.innerText = `Parabéns você ganhou ${valor * mult} crocoins!`
                     break
                 case 3:
-                    mult = 16*(simb-2)
-                    result.innerText = `Parabéns você ganhou ${valor*mult} crocoins!`
-                    break  
+                    mult = 16 * (simb - 2)
+                    result.innerText = `Parabéns você ganhou ${valor * mult} crocoins!`
+                    break
                 case 4:
-                    mult = 32*(simb-2)
-                    result.innerText = `Parabéns você ganhou ${valor*mult} crocoins!`
+                    mult = 32 * (simb - 2)
+                    result.innerText = `Parabéns você ganhou ${valor * mult} crocoins!`
                     break
                 case 5:
-                    mult = 64*(simb-2)
-                    result.innerText = `Parabéns você ganhou ${valor*mult} crocoins!`
-                    break  
+                    mult = 64 * (simb - 2)
+                    result.innerText = `Parabéns você ganhou ${valor * mult} crocoins!`
+                    break
             }
         }
         i++
