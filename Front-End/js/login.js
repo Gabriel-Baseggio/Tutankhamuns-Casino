@@ -10,10 +10,6 @@ document.getElementById('olho2').addEventListener('click', function () {
     document.getElementById('olho').removeAttribute('hidden');
 });
 
-document.getElementById('btnVoltar').addEventListener('click', function () {
-    window.location.href = "/"
-});
-
 let dadosFetch = null;
 
 function dadosLogin() {
@@ -36,7 +32,7 @@ var verificarLogin = (email, senha, results) => {
 
     if (verificacao) {
         localStorage.setItem('id', idPerfil);
-        window.location.href = '/';
+        window.location.href = '/home';
     } else {
         alert("Login inválido!")
     }

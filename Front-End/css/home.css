@@ -33,6 +33,11 @@ body {
     height: 60px;
 }
 
+.sairHeader {
+    cursor: pointer;
+    height: 55px;
+}
+
 .divImgs img {
     margin: 0 10px;
 }

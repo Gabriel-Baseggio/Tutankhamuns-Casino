@@ -8,7 +8,7 @@ app.use(express.json())
 
 app.use(express.static(__dirname + '/'))
 
-app.get('/', (req, res) => {
+app.get('/home', (req, res) => {
     res.sendFile(__dirname + '/components/home.html');
 });
 
@@ -16,7 +16,7 @@ app.get('/cadastro', (req, res) => {
     res.sendFile(__dirname + '/components/cadastro.html');
 });
 
-app.get('/login', (req, res) => {
+app.get('/', (req, res) => {
     res.sendFile(__dirname + '/components/login.html');
 });
 

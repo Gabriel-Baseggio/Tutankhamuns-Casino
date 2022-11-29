@@ -20,6 +20,14 @@ main {
     flex-direction: row;
 }
 
+#btnVoltar {
+    position: absolute;
+    top: 12%;
+    left: 20px;
+    width: 70px;
+    cursor: pointer;
+}
+
 main > div{
     margin-left: 50px;
     margin-right: 50px;
@@ -31,6 +39,11 @@ main > div{
 
 .logoHeader {
     height: 70px;
+}
+
+.sairHeader {
+    cursor: pointer;
+    height: 55px;
 }
 
 .rankingHeader {
@@ -61,6 +74,7 @@ main > div{
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
+    margin-top: 8%;
 }
 
 .vitoria{
@@ -103,6 +117,10 @@ main > div{
     flex-wrap: wrap;
     height: 160px;
     width: 400px;
+}
+
+#perfil {
+    margin-top: 8%;
 }
 
 #nomePerfil{

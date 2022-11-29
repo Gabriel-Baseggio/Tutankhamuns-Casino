@@ -14,6 +14,14 @@ function dados(result){
     derrotas.innerText = result.derrotas;
 }
 
+function deslogar(){
+    window.location.href = '/';
+}
+
+document.getElementById('btnVoltar').addEventListener('click', function () {
+    window.location.href = "/home"
+});
+
 window.addEventListener("load", () => {
     const user = localStorage.getItem('id');
 

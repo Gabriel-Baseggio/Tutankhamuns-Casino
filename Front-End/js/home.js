@@ -13,3 +13,7 @@ function perfil(){
 function cacaNiquel(){
     window.location.href = `/cacaniquel`;
 }
+
+function deslogar(){
+    window.location.href = `/`;
+}

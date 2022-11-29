@@ -1,7 +1,7 @@
 var dadosFetch, cpf, email, senha, nome, saldo, jogos, vitorias, derrotas, nivel
 
 document.getElementById('btnVoltar').addEventListener('click', function () {
-    window.location.href = "/"
+    window.location.href = "/home"
 });
 
 document.getElementById("btnJogar").addEventListener('click', () => {

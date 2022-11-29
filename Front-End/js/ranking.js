@@ -1,5 +1,5 @@
 document.getElementById('btnVoltar').addEventListener('click', function () {
-    window.location.href = "/"
+    window.location.href = "/home"
 });
 
 let posicao = 1;

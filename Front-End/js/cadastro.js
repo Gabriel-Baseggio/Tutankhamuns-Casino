@@ -25,7 +25,7 @@ btn.addEventListener("click", function () {
     const nivel = 1;
     const saldo = 500;
     const vitorias = 0;
-    const derrotas = 0; 
+    const derrotas = 0;
 
     fetch("http://localhost:8080/tutankhamun/perfil",
         {
@@ -37,7 +37,7 @@ btn.addEventListener("click", function () {
         .then(res => {
         })
 
-        window.location.href = "/login"
+    window.location.href = "/"
 });
 
 
