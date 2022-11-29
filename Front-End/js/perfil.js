@@ -14,11 +14,10 @@ function dados(result){
     derrotas.innerText = result.derrotas;
 }
 
-
-// verificar o id do cara para passar nos parametros
-
 window.addEventListener("load", () => {
-    fetch("http://localhost:8080/tutankhamun/perfil/1", {
+    const user = localStorage.getItem('id');
+
+    fetch(`http://localhost:8080/tutankhamun/perfil/${user}`, {
         method: "GET",
         mode: 'cors',
         cache: "default"

@@ -7,7 +7,7 @@ let posicao = 1;
 var dados = (results) => {
     const tbody = document.getElementById("tbody");
 
-    for (let result of results) {
+    for (let result of results.content) {
 
         let tr = document.createElement("tr");
         let tdPosicao = document.createElement("td");
@@ -27,7 +27,7 @@ var dados = (results) => {
 }
 
 window.addEventListener("load", () => {
-    fetch("http://localhost:8080/tutankhamun/perfil", {
+    fetch("http://localhost:8080/tutankhamun/perfil/ordenarsaldo", {
         method: "GET",
         mode: 'cors',
         cache: "default"

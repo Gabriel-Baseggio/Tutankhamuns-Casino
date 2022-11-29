@@ -7,6 +7,10 @@ import br.senai.sc.tutankhamunscasino.model.entities.Perfil;
 import br.senai.sc.tutankhamunscasino.model.service.PerfilService;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.BeanUtils;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -65,6 +69,13 @@ public class PerfilController {
         perfilService.deleteById(id);
 
         return ResponseEntity.status(HttpStatus.OK).body("Perfil deletado com sucesso.");
+    }
+
+    @GetMapping("/ordenarsaldo")
+    public ResponseEntity<Page<Perfil>> findAllSaldo(
+            @PageableDefault(size = 20, sort = "saldo", direction = Sort.Direction.DESC) Pageable pageable) {
+
+        return ResponseEntity.status(HttpStatus.FOUND).body(perfilService.findAll(pageable));
     }
 
 }

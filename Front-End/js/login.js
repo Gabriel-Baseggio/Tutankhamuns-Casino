@@ -35,7 +35,8 @@ var verificarLogin = (email, senha, results) => {
     }
 
     if (verificacao) {
-        window.location.href = '/?user='+idPerfil;
+        localStorage.setItem('id', idPerfil);
+        window.location.href = '/';
     } else {
         alert("Login inválido!")
     }

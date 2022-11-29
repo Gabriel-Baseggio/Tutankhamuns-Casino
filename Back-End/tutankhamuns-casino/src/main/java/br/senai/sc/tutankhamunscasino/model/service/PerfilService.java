@@ -2,6 +2,8 @@ package br.senai.sc.tutankhamunscasino.model.service;
 
 import br.senai.sc.tutankhamunscasino.model.entities.Perfil;
 import br.senai.sc.tutankhamunscasino.repository.PerfilRepository;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -18,6 +20,10 @@ public class PerfilService {
 
     public List<Perfil> findAll(){
         return perfilRepository.findAll();
+    }
+
+    public Page<Perfil> findAll(Pageable pageable) {
+        return perfilRepository.findAll(pageable);
     }
 
     public Optional<Perfil> findById(Long id){
