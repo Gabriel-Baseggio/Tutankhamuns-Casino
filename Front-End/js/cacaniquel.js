@@ -6,6 +6,7 @@ document.getElementById('btnVoltar').addEventListener('click', function () {
 });
 
 document.getElementById("btnJogar").addEventListener('click', () => {
+    pegarDados()
     cpf = dadosFetch.cpf
     email = dadosFetch.email
     senha = dadosFetch.senha
@@ -16,11 +17,8 @@ document.getElementById("btnJogar").addEventListener('click', () => {
     derrotas = dadosFetch.derrotas
     nivel = dadosFetch.nivel
     randomizar()
+    console.log(saldo, jogos, vitorias, derrotas, nivel)
     atualizarDados()
-})
-
-window.addEventListener('load', () => {
-    pegarDados()
 })
 
 document.getElementById("metade").addEventListener('click', () => {
@@ -72,15 +70,16 @@ function jogar(imgs, cont) {
     let img2 = document.getElementById('img2')
     let img3 = document.getElementById('img3')
     let img4 = document.getElementById('img4')
-
+    
     img1.src = imgs[0]
     img2.src = imgs[1]
     img3.src = imgs[2]
     img4.src = imgs[3]
-
+    
     let i = 0
     let mult = 0
     result.innerText = ""
+    saldo -= valor
 
     cont.forEach(simb => {
         if (simb >= 3) {
@@ -131,7 +130,6 @@ function jogar(imgs, cont) {
             }
         } else if (i == 5 && c < 1) {
             result.innerText = `Que pena você não ganhou nada!`
-            saldo -= valor
             derrotas++
         }
         i++

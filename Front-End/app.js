@@ -15,8 +15,6 @@ const sql = mysql.createConnection({
     database: 'tutankhamun_casino'
 })
 
-use = 'tutankhamun_casino'
-
 app.use(express.static(__dirname + '/'))
 
 app.get('/home', (req, res) => {
