@@ -42,7 +42,6 @@ app.get('/cacaniquel', (req, res) => {
 });
 
 app.put('/cacaniquelput', (req, res) => {
-    console.log("req.body no put: ", req.body)
     sql.query("update perfil set saldo = ?, jogos = ?, vitorias = ?, derrotas = ?, nivel = ? where id = ?", [req.body.saldo, req.body.jogos, req.body.vitorias, req.body.derrotas, req.body.nivel, req.body.id], (error, results, fields) => {
     });
 });
