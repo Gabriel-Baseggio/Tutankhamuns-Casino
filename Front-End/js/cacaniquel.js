@@ -1,4 +1,5 @@
 var dadosFetch, cpf, email, senha, nome, saldo, jogos, vitorias, derrotas, nivel
+var id = localStorage.getItem('id')
 
 document.getElementById('btnVoltar').addEventListener('click', function () {
     window.location.href = "/home"
@@ -191,10 +192,10 @@ function pegarDados() {
 }
 
 function atualizarDados() {
-    fetch("http://localhost:8080/tutankhamun/perfil", {
+    fetch("/cacaniquelput", {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(dadosFetch)
+        body: JSON.stringify({saldo, jogos, vitorias, derrotas, nivel, id})
     })
         .then(res => {
         })
