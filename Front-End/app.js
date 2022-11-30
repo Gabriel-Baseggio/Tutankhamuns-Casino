@@ -15,6 +15,8 @@ const sql = mysql.createConnection({
     database: 'tutankhamun_casino'
 })
 
+use = 'tutankhamun_casino'
+
 app.use(express.static(__dirname + '/'))
 
 app.get('/home', (req, res) => {
@@ -43,7 +45,7 @@ app.get('/cacaniquel', (req, res) => {
 
 app.put('/cacaniquelput', (req, res) => {
     console.log("req.body no put: ", req.body)
-    sql.query("update cliente set saldo = ?, jogos = ?, vitorias = ?, derrotas = ?, nivel = ?, where id = ?", [req.body.saldo, req.body.jogos, req.body.vitorias, req.body.derrotas, req.body.nivel, req.body.id], (error, results, fields) => {
+    sql.query("update perfil set saldo = ?, jogos = ?, vitorias = ?, derrotas = ?, nivel = ? where id = ?", [req.body.saldo, req.body.jogos, req.body.vitorias, req.body.derrotas, req.body.nivel, req.body.id], (error, results, fields) => {
     });
 });
 
