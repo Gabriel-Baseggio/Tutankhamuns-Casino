@@ -6,7 +6,6 @@ document.getElementById('btnVoltar').addEventListener('click', function () {
 });
 
 document.getElementById("btnJogar").addEventListener('click', () => {
-    pegarDados()
     cpf = dadosFetch.cpf
     email = dadosFetch.email
     senha = dadosFetch.senha
@@ -19,6 +18,10 @@ document.getElementById("btnJogar").addEventListener('click', () => {
     randomizar()
     console.log(saldo, jogos, vitorias, derrotas, nivel)
     atualizarDados()
+})
+
+window.addEventListener('mousemove', () =>{
+    pegarDados()
 })
 
 document.getElementById("metade").addEventListener('click', () => {
