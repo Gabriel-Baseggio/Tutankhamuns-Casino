@@ -30,6 +30,7 @@ body{
 }
 
 #DivRoleta {
+    margin-top: 5%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -37,8 +38,8 @@ body{
     flex-direction: row;
     border: 2px white solid;
     border-radius: 20px;
-    height: 30rem;
-    width: 50%;
+    height: 25rem;
+    width: 60%;
     background-color: #00682A;
 }
 
